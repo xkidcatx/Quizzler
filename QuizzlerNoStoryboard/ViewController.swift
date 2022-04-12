@@ -11,7 +11,7 @@ import SnapKit
 class ViewController: UIViewController {
     
     var quizBrain = QuizBrain()
-    var buttons: [UIButton] = [UIButton(type: .system), UIButton(type: .system)]
+    var buttons: [UIButton] = [UIButton(type: .system), UIButton(type: .system), UIButton(type: .system)]
     var questionLabel: UILabel = {
         let label = UILabel()
         label.text = "Question Text"
@@ -56,7 +56,6 @@ class ViewController: UIViewController {
                 make.height.equalTo(80)
             }
         }
-        buttons[0].setTitle("False", for: .normal)
     }
     
     @objc func answerButtonPressed(_ sender: UIButton) {
@@ -74,6 +73,9 @@ class ViewController: UIViewController {
         questionLabel.text = quizBrain.currentQuestion
         progress.progress = quizBrain.progress
         scoreLabel.text = "Score: \(quizBrain.getScore())"
+        buttons[0].setTitle(quizBrain.quiz[quizBrain.questionNumber].answer[0], for: .normal)
+        buttons[1].setTitle(quizBrain.quiz[quizBrain.questionNumber].answer[1], for: .normal)
+        buttons[2].setTitle(quizBrain.quiz[quizBrain.questionNumber].answer[2], for: .normal)
     }
     
     //MARK: - Create & Setup Progress Bar
