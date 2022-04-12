@@ -7,23 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08565C2A92330A6EB1D98339 /* Pods_QuizzlerNoStoryboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CB98A02BD4221B540A07CA9 /* Pods_QuizzlerNoStoryboard.framework */; };
 		1AB82B062804661800C55FCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB82B052804661800C55FCB /* AppDelegate.swift */; };
-		1AB82B082804661800C55FCB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB82B072804661800C55FCB /* SceneDelegate.swift */; };
 		1AB82B0A2804661800C55FCB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB82B092804661800C55FCB /* ViewController.swift */; };
-		1AB82B0D2804661800C55FCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AB82B0B2804661800C55FCB /* Main.storyboard */; };
 		1AB82B0F2804661800C55FCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AB82B0E2804661800C55FCB /* Assets.xcassets */; };
 		1AB82B122804661800C55FCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AB82B102804661800C55FCB /* LaunchScreen.storyboard */; };
+		1AB82B1B2804C0F900C55FCB /* QuizBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB82B1A2804C0F900C55FCB /* QuizBrain.swift */; };
+		1AB82B1F2804CE7700C55FCB /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB82B1E2804CE7700C55FCB /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1AB82B022804661800C55FCB /* QuizzlerNoStoryboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizzlerNoStoryboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AB82B052804661800C55FCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1AB82B072804661800C55FCB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1AB82B092804661800C55FCB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1AB82B0C2804661800C55FCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1AB82B0E2804661800C55FCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1AB82B112804661800C55FCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1AB82B132804661800C55FCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AB82B1A2804C0F900C55FCB /* QuizBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizBrain.swift; sourceTree = "<group>"; };
+		1AB82B1E2804CE7700C55FCB /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		37CEE7D7B8F53F5128DB702D /* Pods-QuizzlerNoStoryboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuizzlerNoStoryboard.release.xcconfig"; path = "Target Support Files/Pods-QuizzlerNoStoryboard/Pods-QuizzlerNoStoryboard.release.xcconfig"; sourceTree = "<group>"; };
+		4CB98A02BD4221B540A07CA9 /* Pods_QuizzlerNoStoryboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuizzlerNoStoryboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BED291AAC0C2CCCE7D92D4B6 /* Pods-QuizzlerNoStoryboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuizzlerNoStoryboard.debug.xcconfig"; path = "Target Support Files/Pods-QuizzlerNoStoryboard/Pods-QuizzlerNoStoryboard.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08565C2A92330A6EB1D98339 /* Pods_QuizzlerNoStoryboard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				1AB82B042804661800C55FCB /* QuizzlerNoStoryboard */,
 				1AB82B032804661800C55FCB /* Products */,
+				9ACE2D1DACC612F41151CB17 /* Pods */,
+				DB12880F7DD2545B75002A9F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +64,39 @@
 			isa = PBXGroup;
 			children = (
 				1AB82B052804661800C55FCB /* AppDelegate.swift */,
-				1AB82B072804661800C55FCB /* SceneDelegate.swift */,
 				1AB82B092804661800C55FCB /* ViewController.swift */,
-				1AB82B0B2804661800C55FCB /* Main.storyboard */,
+				1AB82B192804C0E500C55FCB /* Model */,
 				1AB82B0E2804661800C55FCB /* Assets.xcassets */,
 				1AB82B102804661800C55FCB /* LaunchScreen.storyboard */,
 				1AB82B132804661800C55FCB /* Info.plist */,
 			);
 			path = QuizzlerNoStoryboard;
+			sourceTree = "<group>";
+		};
+		1AB82B192804C0E500C55FCB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1AB82B1A2804C0F900C55FCB /* QuizBrain.swift */,
+				1AB82B1E2804CE7700C55FCB /* Question.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9ACE2D1DACC612F41151CB17 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BED291AAC0C2CCCE7D92D4B6 /* Pods-QuizzlerNoStoryboard.debug.xcconfig */,
+				37CEE7D7B8F53F5128DB702D /* Pods-QuizzlerNoStoryboard.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DB12880F7DD2545B75002A9F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CB98A02BD4221B540A07CA9 /* Pods_QuizzlerNoStoryboard.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +106,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1AB82B162804661800C55FCB /* Build configuration list for PBXNativeTarget "QuizzlerNoStoryboard" */;
 			buildPhases = (
+				39B5391B5E6645FB90019CE7 /* [CP] Check Pods Manifest.lock */,
 				1AB82AFE2804661800C55FCB /* Sources */,
 				1AB82AFF2804661800C55FCB /* Frameworks */,
 				1AB82B002804661800C55FCB /* Resources */,
+				5270B3A051390017A959DCAC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,34 +161,68 @@
 			files = (
 				1AB82B122804661800C55FCB /* LaunchScreen.storyboard in Resources */,
 				1AB82B0F2804661800C55FCB /* Assets.xcassets in Resources */,
-				1AB82B0D2804661800C55FCB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		39B5391B5E6645FB90019CE7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuizzlerNoStoryboard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5270B3A051390017A959DCAC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuizzlerNoStoryboard/Pods-QuizzlerNoStoryboard-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuizzlerNoStoryboard/Pods-QuizzlerNoStoryboard-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QuizzlerNoStoryboard/Pods-QuizzlerNoStoryboard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1AB82AFE2804661800C55FCB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AB82B1B2804C0F900C55FCB /* QuizBrain.swift in Sources */,
+				1AB82B1F2804CE7700C55FCB /* Question.swift in Sources */,
 				1AB82B0A2804661800C55FCB /* ViewController.swift in Sources */,
 				1AB82B062804661800C55FCB /* AppDelegate.swift in Sources */,
-				1AB82B082804661800C55FCB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1AB82B0B2804661800C55FCB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1AB82B0C2804661800C55FCB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1AB82B102804661800C55FCB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,6 +350,7 @@
 		};
 		1AB82B172804661800C55FCB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BED291AAC0C2CCCE7D92D4B6 /* Pods-QuizzlerNoStoryboard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -292,9 +361,10 @@
 				INFOPLIST_FILE = QuizzlerNoStoryboard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,6 +380,7 @@
 		};
 		1AB82B182804661800C55FCB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37CEE7D7B8F53F5128DB702D /* Pods-QuizzlerNoStoryboard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -320,9 +391,10 @@
 				INFOPLIST_FILE = QuizzlerNoStoryboard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
