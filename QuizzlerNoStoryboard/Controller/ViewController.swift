@@ -12,25 +12,22 @@ class ViewController: UIViewController {
     
     var quizBrain = QuizBrain()
     var buttons: [UIButton] = [UIButton(type: .system), UIButton(type: .system), UIButton(type: .system)]
+    
     var questionLabel: UILabel = {
-        let label = UILabel()
-        label.text = "Question Text"
-        label.font = UIFont.boldSystemFont(ofSize: 30)
-        label.textAlignment = .left
-        label.numberOfLines = 0
-        label.textColor = .white
-        return label
-    }()
+        $0.text = "Question text"
+        $0.font = UIFont.boldSystemFont(ofSize: 30)
+        $0.textAlignment = .left
+        $0.numberOfLines = 0
+        $0.textColor = .white
+        return $0
+    }(UILabel())
     
     var scoreLabel: UILabel = {
-        let score = UILabel()
-        score.textAlignment = .left
-        score.font = UIFont.boldSystemFont(ofSize: 20)
-        score.textColor = .white
-        return score
-    }()
-    
-    
+        $0.textAlignment = .left
+        $0.font = UIFont.boldSystemFont(ofSize: 20)
+        $0.textColor = .white
+        return $0
+    }(UILabel())
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -81,17 +78,15 @@ class ViewController: UIViewController {
     //MARK: - Create & Setup Progress Bar
     
     let progress: UIProgressView = {
-        let progress = UIProgressView()
-        progress.progressViewStyle = .bar
-        progress.progress = 0.5
-        progress.trackTintColor = .white
-        progress.tintColor = UIColor(named: "TintColor")
-        progress.snp.makeConstraints { make in
+        $0.progressViewStyle = .bar
+        $0.progress = 0.5
+        $0.trackTintColor = .white
+        $0.tintColor = UIColor(named: "TintColor")
+        $0.snp.makeConstraints { make in
             make.height.equalTo(10)
         }
-        return progress
-        
-    }()
+        return $0
+    }(UIProgressView())
     
     //MARK: - Initialize UI
     
@@ -114,6 +109,9 @@ class ViewController: UIViewController {
         buttonsStack.spacing = 10
         buttonsStack.distribution = .fillEqually
         
+        scoreLabel.snp.makeConstraints { make in
+            make.height.equalTo(20)
+        }
         
         let stack = UIStackView(arrangedSubviews: [scoreLabel, questionLabel, buttonsStack, progress])
         stack.axis = .vertical
@@ -122,7 +120,7 @@ class ViewController: UIViewController {
         stack.distribution = .fillProportionally
         view.addSubview(stack)
         stack.snp.makeConstraints { make in
-            make.top.equalTo(20)
+            make.top.equalTo(view.safeAreaLayoutGuide)
             make.bottom.equalTo(-20)
             make.left.equalTo(20)
             make.right.equalTo(-20)

@@ -64,7 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				1AB82B052804661800C55FCB /* AppDelegate.swift */,
-				1AB82B092804661800C55FCB /* ViewController.swift */,
+				1AB82B202805A50C00C55FCB /* Controller */,
 				1AB82B192804C0E500C55FCB /* Model */,
 				1AB82B0E2804661800C55FCB /* Assets.xcassets */,
 				1AB82B102804661800C55FCB /* LaunchScreen.storyboard */,
@@ -80,6 +80,14 @@
 				1AB82B1E2804CE7700C55FCB /* Question.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		1AB82B202805A50C00C55FCB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1AB82B092804661800C55FCB /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		9ACE2D1DACC612F41151CB17 /* Pods */ = {

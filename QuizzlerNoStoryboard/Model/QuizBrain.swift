@@ -8,6 +8,7 @@
 import Foundation
 
 struct QuizBrain {
+    
     let quiz = [
         Question(q: "Which is the largest organ in the human body?", a: ["Heart", "Skin", "Large Intestine"], c: "Skin"),
         Question(q: "Five dollars is worth how many nickels?", a: ["25", "50", "100"], c: "100"),
@@ -63,6 +64,7 @@ struct QuizBrain {
             questionNumber += 1
         } else {
             questionNumber = 0
+            score = 0
         }
     }
 }
